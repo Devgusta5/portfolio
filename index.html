@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio | Desenvolvedor</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">&lt;/Dev&gt;</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typing-text">Olá, eu sou</span>
+                    <span class="name-highlight">João Developer</span>
+                </h1>
+                <p class="hero-subtitle">Full Stack Developer & UI/UX Enthusiast</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                    <a href="#contact" class="btn btn-secondary">Contato</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-block">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">portfolio.js</span>
+                    </div>
+                    <div class="code-content">
+                        <span class="code-line"><span class="keyword">const</span> <span class="variable">developer</span> = {</span>
+                        <span class="code-line">  <span class="property">name</span>: <span class="string">"João"</span>,</span>
+                        <span class="code-line">  <span class="property">skills</span>: [<span class="string">"React"</span>, <span class="string">"Node.js"</span>],</span>
+                        <span class="code-line">  <span class="property">passion</span>: <span class="string">"coding"</span></span>
+                        <span class="code-line">};</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-card reveal">
+                <div class="about-header">
+                    <div class="profile-image">
+                        <img src="/placeholder.svg?height=120&width=120" alt="Profile Picture">
+                        <div class="status-indicator"></div>
+                    </div>
+                    <div class="about-info">
+                        <h2>João Developer</h2>
+                        <p class="about-role">@joaodev • Full Stack Developer</p>
+                        <div class="about-stats">
+                            <div class="stat">
+                                <span class="stat-number">50+</span>
+                                <span class="stat-label">Projetos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Anos</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-number">100+</span>
+                                <span class="stat-label">Commits</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <p>Desenvolvedor Full Stack apaixonado por criar soluções inovadoras e interfaces intuitivas. Especializado em React, Node.js e tecnologias modernas de desenvolvimento web.</p>
+                    <div class="tech-stack">
+                        <h3>Tech Stack</h3>
+                        <div class="tech-icons">
+                            <span class="tech-item"><i class="fab fa-js-square"></i> JavaScript</span>
+                            <span class="tech-item"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-item"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-item"><i class="fab fa-python"></i> Python</span>
+                            <span class="tech-item"><i class="fas fa-database"></i> MongoDB</span>
+                            <span class="tech-item"><i class="fab fa-git-alt"></i> Git</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Timeline -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title reveal">Meus Projetos</h2>
+            
+            <!-- Botão de navegação entre projetos -->
+            <div class="project-nav-button" id="project-nav-button">
+                <button class="btn-nav">
+                    <span class="nav-text">Veja meu primeiro projeto</span>
+                    <i class="fas fa-arrow-down"></i>
+                </button>
+            </div>
+            
+            <div class="timeline">
+    <div class="timeline-line"></div>
+    
+    <div class="timeline-item left reveal">
+        <div class="timeline-content">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>E-commerce Platform</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="Ver código"><i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" title="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <p>Plataforma completa de e-commerce com React, Node.js e MongoDB. Sistema de pagamento integrado e painel administrativo.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Stripe</span>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/usuario/ecommerce-platform" class="btn-repo" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Ver Repositório
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-marker"></div>
+    </div>
+
+    <div class="timeline-item right reveal">
+        <div class="timeline-content">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Task Management App</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <p>Aplicativo de gerenciamento de tarefas com interface moderna, drag & drop e sincronização em tempo real.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Vue.js</span>
+                    <span class="tech-tag">Firebase</span>
+                    <span class="tech-tag">Vuetify</span>
+                </div>
+                <!-- Este projeto não tem botão de repositório -->
+            </div>
+        </div>
+        <div class="timeline-marker"></div>
+    </div>
+
+    <div class="timeline-item left reveal">
+        <div class="timeline-content">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Weather Dashboard</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="Ver código"><i class="fab fa-github"></i></a>
+                        <a href="#" class="project-link" title="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <p>Dashboard meteorológico com previsões detalhadas, mapas interativos e análise de dados climáticos.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Chart.js</span>
+                    <span class="tech-tag">OpenWeather API</span>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/usuario/weather-dashboard" class="btn-repo" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Ver Repositório
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-marker"></div>
+    </div>
+
+    <div class="timeline-item right reveal">
+        <div class="timeline-content">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Social Media Analytics</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <p>Ferramenta de análise de redes sociais com métricas avançadas, relatórios automáticos e insights em tempo real.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">D3.js</span>
+                </div>
+                <div class="project-actions">
+                    <a href="https://github.com/usuario/social-analytics" class="btn-repo" target="_blank">
+                        <i class="fab fa-github"></i>
+                        Ver Repositório
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="timeline-marker"></div>
+    </div>
+
+    <div class="timeline-item left reveal">
+        <div class="timeline-content">
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>AI Chat Assistant</h3>
+                    <div class="project-links">
+                        <a href="#" class="project-link" title="Ver demo"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <p>Assistente de chat inteligente com processamento de linguagem natural e integração com múltiplas APIs.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">OpenAI</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Tailwind</span>
+                </div>
+                <!-- Este projeto não tem botão de repositório -->
+            </div>
+        </div>
+        <div class="timeline-marker"></div>
+    </div>
+</div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content reveal">
+                <h2>Vamos Trabalhar Juntos?</h2>
+                <p>Estou sempre aberto a novas oportunidades e projetos interessantes.</p>
+                <div class="contact-buttons">
+                    <a href="mailto:joao@email.com" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i> Enviar Email
+                    </a>
+                    <a href="#" class="btn btn-secondary">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 João Developer. Feito com <i class="fas fa-heart"></i> e muito café.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
